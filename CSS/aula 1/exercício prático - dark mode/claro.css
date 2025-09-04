@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+header a {
+    color: #007bff;
+}
+
+main {
+    background-color: #f9f9f9;
+}
+
+.receita {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.receita h2 {
+    color: #0056b3;
+}

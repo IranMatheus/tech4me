@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a202c; /* Fundo azul marinho escuro */
+    color: #e2e8f0; /* Fonte cinza claro */
+}
+
+header {
+    background-color: #2d3748; /* Cabeçalho cinza escuro */
+    color: #e2e8f0;
+}
+
+header a {
+    color: #63b3ed; /* Link azul claro para contraste */
+}
+
+main {
+    background-color: #2d3748; /* Fundo do conteúdo cinza escuro */
+}
+
+.receita {
+    background-color: #4a5568; /* Fundo da receita cinza médio */
+    border: 1px solid #718096; /* Borda cinza */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+}
+
+.receita h2 {
+    color: #90cdf4; /* Título em azul claro */
+}
+
+h1 {
+    color: #90cdf4;
+}
+
+footer {
+    background-color: #2d3748;
+    color: #e2e8f0;
+}
