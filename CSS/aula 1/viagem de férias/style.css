@@ -52,10 +52,10 @@ section {
     margin-bottom: 1em;
 }
 
-/* Responsividade (opcional) */
 @media (max-width: 600px) {
     nav li {
         display: block;
         margin: 0.5em 0;
     }
+
 }
