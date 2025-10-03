@@ -1,0 +1,59 @@
+.container {
+            width: 300px;
+            height: 200px; 
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bandeira-cor {
+            width: 100%;
+            height: calc(100% / 3);
+            position: absolute; 
+            left: 0; 
+            animation-fill-mode: forwards; 
+        }
+
+        .amarelo {
+            background-color: yellow;
+            top: 0;
+            animation: moverAmarelo 3s ease-in-out 0s;
+        }
+
+        .azul {
+            background-color: blue;
+            top: calc(100% / 3);
+            animation: moverAzul 3s ease-in-out 1s;
+        }
+
+        .vermelho {
+            background-color: red;
+            top: calc(100% * 2 / 3); 
+            animation: moverVermelho 3s ease-in-out 2s; 
+        }
+
+        @keyframes moverAmarelo {
+            from {
+                left: -100px;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        @keyframes moverAzul {
+            from {
+                left: -100px;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        @keyframes moverVermelho {
+            from {
+                left: -100px;
+            }
+            to {
+                left: 0;
+            }
+        }

@@ -1,4 +1,8 @@
 body {
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #1a202c; /* Fundo azul marinho escuro */
     color: #e2e8f0; /* Fonte cinza claro */
@@ -6,18 +10,31 @@ body {
 
 header {
     background-color: #2d3748; /* Cabeçalho cinza escuro */
-    color: #e2e8f0;
+    color: #2b2d30;
+    padding: 1rem; 
+    text-align: right;
 }
 
 header a {
-    color: #63b3ed; /* Link azul claro para contraste */
+    text-decoration: none;
+    color: #63b3ed;
+    font-weight: bold; /* Link azul claro para contraste */
 }
 
 main {
+    flex: 1; 
+    padding: 2rem;
     background-color: #2d3748; /* Fundo do conteúdo cinza escuro */
 }
 
+.receita ul, .receita ol {
+     margin-left: 1.5rem; 
+}
+
 .receita {
+    margin-bottom: 2rem; 
+    padding: 1.5rem; 
+    border-radius: 8px; 
     background-color: #4a5568; /* Fundo da receita cinza médio */
     border: 1px solid #718096; /* Borda cinza */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
@@ -34,4 +51,6 @@ h1 {
 footer {
     background-color: #2d3748;
     color: #e2e8f0;
+padding: 1rem; 
+text-align: center; 
 }

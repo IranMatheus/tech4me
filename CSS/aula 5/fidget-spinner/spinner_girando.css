@@ -1,0 +1,23 @@
+.spinner-container {
+  width: 200px; /* Ajuste conforme necessário */
+  height: 200px; /* Ajuste conforme necessário */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto; /* Centraliza na página */
+}
+
+.spinner {
+  width: 100%;
+  height: 100%;
+  animation: spin 0.2s linear infinite; /* Define a animação */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

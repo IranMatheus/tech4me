@@ -1,0 +1,16 @@
+.button.is-primary {
+    background-color: blueviolet;
+    border-color: navy;
+    color: white;
+}
+
+.meu-botao {
+    background-color: orangered;
+    border: 2px solid olive;
+    color: black;
+    font-weight: bold;
+}
+
+.meu-botao:hover { 
+    background-color: yellow;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="http://localhost:3003/alunos" method="get">
+        <label for="cpfCnpj">CPF ou CNPJ</label> <br>
+        <input type="text" maxlength="30" name="nome" placeholder="Digite o cpf ou cnpj"> <br><br>
+        <label for="senha">Senha</label> <br>
+        <input type="password" name="senha" placeholder="Digite senha"><br><br>
+        <label for="senha">Idade</label> <br>
+        <input type="number" max="10" min="3" name="idade" placeholder="Digite sua idade"> <br><br>
+        
+        <div>
+            <label>Time</label> <br>
+            <input type="radio" name="time" value="fla"> <span>Flamengo</span>
+            <input type="radio" name="time" value="flu"> <span>Fluminense</span> <br><br>
+            <label>Data Comemorativa</label> <br>
+            <input type="radio" name="dataComemorativa" value="noel"> <span>Papai Noel</span>
+            <input type="radio" name="dataComemorativa" value="coelho"> <span>Coelinho da Páscoa</span>
+        </div> <br><br>
+
+        <input type="checkbox"> <p>Concordo com os termos de uso</p> <br><br>
+
+        <select name="estado" id="estado" size="2" required>
+            <option disabled>Selecione o estado</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="ba">Bahia</option>
+            <option value="sp">São Paulo</option>
+        </select> <br><br>
+        
+        <textArea cols="50" rows="10"></textArea> <br><br>
+
+        <input type="button" value="enviar type button">
+        <input type="submit" value="enviar">
+        <button type="submit">Enviar o formulário</button>
+
+        <button disabled>teste</button>
+    </form>
+</body>
+</html>

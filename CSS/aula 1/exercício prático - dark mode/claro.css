@@ -1,4 +1,8 @@
 body {
+     display: flex; 
+     flex-direction: column; 
+     min-height: 100vh; 
+     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
     color: #333333;
@@ -7,17 +11,28 @@ body {
 header {
     background-color: #e0e0e0;
     color: #333333;
+    padding: 1rem; 
+    text-align: right;
 }
 
 header a {
-    color: #007bff;
+    color: #333;
+    text-decoration: 
+    none;  
+    font-weight: bold;
 }
 
 main {
+    flex: 1; 
+    padding: 2rem;
     background-color: #f9f9f9;
 }
 
 .receita {
+     margin-bottom: 2rem; 
+     padding: 1.5rem; 
+     border-radius: 8px; 
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background-color: #ffffff;
     border: 1px solid #dddddd;
 }

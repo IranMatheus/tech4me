@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Detalhes do Produto - Kappa Cardápios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="detalhes-style.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <strong>Kappa Cardápios</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <input class="input" type="text" placeholder="Buscar produto">
+                </div>
+                <div class="navbar-item">
+                    <a class="button is-info" href="cardapio.html">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <figure class="image is-4by3">
+                        <img src="" alt="" class="product-image" id="productImage">
+                    </figure>
+                </div>
+                <div class="column is-half">
+                    <h1 class="title" id="productTitle"></h1>
+                    <p id="productDescription"></p>
+                    <p class="title is-5" id="productPrice"></p>
+                    <button class="button is-primary blink">Comprar Agora</button>
+
+
+                    <form>
+                        <div class="field">
+                            <label class="label">Receba nossas promoções</label>
+                            <div class="control">
+                                <input class="input" type="email" placeholder="Seu e-mail">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    Aceito os <a href="#">termos de uso</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-success" type="button" onclick="alert('E-mail cadastrado com sucesso!')">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[$$$$]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+ 
+        const produto = getParameterByName('produto');
+
+    
+        const produtos = {
+            sushi: {
+                nome: 'Sushi de Salmão',
+                descricao: 'Delicioso sushi feito com salmão fresco e arroz japonês de alta qualidade. Uma explosão de sabor em cada mordida!',
+                preco: 'R$ 25,00',
+                imagem: 'sushi-salmao.jpg'
+            },
+            temaki: {
+                nome: 'Temaki de Atum',
+                descricao: 'Temaki crocante recheado com atum fresquinho.Uma explosão de sabor em cada mordida!',
+                preco: 'R$ 20,00',
+                imagem: 'temaki-de-atum.jpg'
+            },
+            ramen: {
+                nome: 'Ramen de Frango',
+                descricao: 'Sopa quente de ramen com pedaços de frango. Dando aquele calorzinho na barriga',
+                preco: 'R$ 30,00',
+                imagem: 'ramen-de-frango.jpg'
+            },
+            gyoza: {
+                nome: 'Gyoza',
+                descricao: 'Pastéis recheados com carne de porco e vegetais.Uma explosão de sabor em cada mordida!',
+                preco: 'R$ 18,00',
+                imagem: 'gyoza.jpg'
+            },
+            tempura: {
+                nome: 'Tempurá',
+                descricao: 'Frutos do mar e vegetais empanados e fritos, crocantes e leves.Uma explosão de sabor em cada mordida!',
+                preco: 'R$ 22,00',
+                imagem: 'tempura.jpg'
+            },
+            onigiri: {
+                nome: 'Onigiri',
+                descricao: 'Bolinhos de arroz recheados e moldados em algas nori.Uma explosão de sabor em cada mordida!',
+                preco: 'R$ 15,00',
+                imagem: 'onigiri.jpg'
+            }
+        };
+
+
+        if (produto && produtos[produto]) {
+            document.getElementById('productTitle').textContent = produtos[produto].nome;
+            document.getElementById('productDescription').textContent = produtos[produto].descricao;
+            document.getElementById('productPrice').textContent = produtos[produto].preco;
+            document.getElementById('productImage').src = produtos[produto].imagem;
+            document.getElementById('productImage').alt = produtos[produto].nome;
+        } else {
+            document.getElementById('productTitle').textContent = 'Produto não encontrado';
+            document.getElementById('productDescription').textContent = 'Desculpe, o produto solicitado não foi encontrado.';
+            document.getElementById('productImage').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

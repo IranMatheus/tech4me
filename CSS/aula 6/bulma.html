@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mundo dos Anfíbios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#home">
+                <i class="fas fa-frog"></i> <strong>Anfíbios em Foco</strong>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#home">Início</a>
+                <a class="navbar-item" href="#informacoes">Informações</a>
+                <a class="navbar-item" href="#galeria">Galeria</a>
+                <a class="navbar-item" href="#contato">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-success is-fullheight-with-navbar">
+        <div class="hero-body has-text-centered">
+            <h1 class="title is-1">Descubra os Anfíbios!</h1>
+            <h2 class="subtitle is-3">Guardiões da Biodiversidade.</h2>
+            <a class="button is-large is-warning is-rounded">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="informacoes" class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mb-6">O Que São Anfíbios?</h2>
+            <div class="columns is-variable is-8">
+                <div class="column is-12-mobile is-4-desktop">
+                    <div class="box has-text-centered">
+                        <span class="icon is-large is-success"><i class="fas fa-home fa-3x"></i></span>
+                        <h3 class="title is-4 mt-4">Habitat</h3>
+                        <p class="subtitle is-6">Vivem em ambientes úmidos ou aquáticos, com fases de vida terrestre e aquática.</p>
+                    </div>
+                </div>
+                <div class="column is-12-mobile is-4-desktop">
+                    <div class="box has-text-centered">
+                        <span class="icon is-large is-success"><i class="fas fa-leaf fa-3x"></i></span>
+                        <h3 class="title is-4 mt-4">Dieta</h3>
+                        <p class="subtitle is-6">Predadores de insetos, moluscos e outros pequenos invertebrados.</p>
+                    </div>
+                </div>
+                <div class="column is-12-mobile is-4-desktop">
+                    <div class="box has-text-centered">
+                        <span class="icon is-large is-success"><i class="fas fa-egg fa-3x"></i></span>
+                        <h3 class="title is-4 mt-4">Reprodução</h3>
+                        <p class="subtitle is-6">Geralmente realizam a fecundação externamente, com ovos depositados na água.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mb-6">Galeria de Espécies</h2>
+            <div class="columns is-multiline is-centered">
+                <div class="column is-12-mobile is-4-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3"><img src="perereca.jpg" alt="perereca"></figure>
+                        </div>
+                        <div class="card-content"><p class="title is-4">Perereca(Hylidae)</p><p>Pequena e ágil, com ventosas nos dedos.</p></div>
+                    </div>
+                </div>
+                <div class="column is-12-mobile is-4-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3"><img src="salamandra.jpg" alt="salamandra"> </figure>
+                        </div>
+                        <div class="card-content"><p class="title is-4">Salamandra(Caudata)</p><p>Conhecida por sua pele vibrante e vida em ambientes úmidos.</p></div>
+                    </div>
+                </div>
+                <div class="column is-12-mobile is-4-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3"><img src="axolote.jpg" alt="axolote"> </figure>
+                        </div>
+                        <div class="card-content"><p class="title is-4">Axolote(Ambystoma mexicanum)</p><p>Um anfíbio aquático com incríveis habilidades de regeneração.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mb-6">Fale Conosco</h2>
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <form>
+                        <div class="field">
+                            <label class="label">Nome</label>
+                            <div class="control has-icons-left"><input class="input" type="text" placeholder="Seu Nome"><span class="icon is-small is-left"><i class="fas fa-user"></i></span></div>
+                        </div>
+                        <div class="field">
+                            <label class="label">E-mail</label>
+                            <div class="control has-icons-left"><input class="input" type="email" placeholder="seuemail@exemplo.com"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Mensagem</label>
+                            <div class="control"><textarea class="textarea" placeholder="Deixe sua mensagem aqui..."></textarea></div>
+                        </div>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-success is-fullwidth">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 Anfíbios em Foco. Todos os direitos reservados.</p>
+            <div class="buttons are-medium is-centered">
+                <a class="button is-info is-rounded" aria-label="facebook"><span class="icon"><i class="fab fa-facebook-f"></i></span></a>
+                <a class="button is-info is-rounded" aria-label="twitter"><span class="icon"><i class="fab fa-twitter"></i></span></a>
+                <a class="button is-info is-rounded" aria-label="instagram"><span class="icon"><i class="fab fa-instagram"></i></span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

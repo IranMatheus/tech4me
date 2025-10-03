@@ -1,0 +1,46 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.estrelas {
+  background-color: #90ee90;
+  font-size: 20px;
+  color: white; 
+  width: 100px; 
+}
+
+.estrelas::before {
+  content: '\2605\2605\2605\2605\2605'; 
+}
+
+.estrelas[data-nota="1"]::before {
+  content: '\2605\2606\2606\2606\2606';
+  color: yellow;
+}
+.estrelas[data-nota="2"]::before {
+  content: '\2605\2605\2606\2606\2606';
+  color: yellow;
+}
+.estrelas[data-nota="3"]::before {
+  content: '\2605\2605\2605\2606\2606';
+  color: yellow;
+}
+.estrelas[data-nota="4"]::before {
+  content: '\2605\2605\2605\2605\2606';
+  color: yellow;
+}
+.estrelas[data-nota="5"]::before {
+  content: '\2605\2605\2605\2605\2605';
+  color: yellow;
+}

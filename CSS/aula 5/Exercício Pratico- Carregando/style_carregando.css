@@ -1,0 +1,30 @@
+.loader {
+  border: 8px solid rgba(0, 0, 0, 0.1); 
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: #3498db;
+  }
+  25% {
+    border-top-color: #e74c3c;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: #f39c12;
+  }
+  75% {
+    border-top-color: #2ecc71;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: #3498db;
+  }
+}

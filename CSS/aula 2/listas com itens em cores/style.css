@@ -1,0 +1,95 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style: disc;
+    padding: 0;
+    width: 85%;
+    max-width: 650px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para garantir que os cantos arredondados funcionem */
+}
+
+li {
+    padding: 20px 25px;
+    font-size: 1.2em;
+    color: #ffffff; /* Cor do texto para contraste */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: list-item;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos específicos para cada tópico com cores de fundo */
+.topic-1 {
+    background-color: #3ce75e; /* Vermelho vibrante */
+}
+
+.topic-2 {
+    background-color: #343434; /* Azul moderno */
+}
+
+.topic-3 {
+    background-color: #ce3e71; /* Verde esmeralda */
+}
+
+.topic-4 {
+    background-color: #464665; /* Amarelo ensolarado */
+}
+
+/* Efeitos de hover para interatividade */
+li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para o pseudo-elemento marker */
+ul li::marker {
+    content: '➔ '; /* Seta para a direita */
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+/* Ajustes para os marcadores com base na classe do item */
+.topic-1::marker {
+    color: rgba(88, 86, 86, 0.9);
+}
+
+.topic-2::marker {
+    color: rgba(55, 53, 53, 0.9);
+}
+
+.topic-3::marker {
+    color: rgba(88, 88, 88, 0.9);
+}
+
+.topic-4::marker {
+    color: rgba(74, 73, 73, 0.6);
+}
