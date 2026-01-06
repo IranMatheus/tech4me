@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Relógio Digital</title>
+<style>
+  body {
+    font-family: monospace; /* Fonte monoespaçada */
+    text-align: center;
+  }
+  #relogio {
+    font-size: 3em; /* Tamanho da fonte */
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+
+<div id="relogio"></div>
+
+<script>
+function atualizarRelogio() {
+  const agora = new Date();
+  let horas = agora.getHours();
+  let minutos = agora.getMinutes();
+  let segundos = agora.getSeconds();
+
+  // Adiciona um zero à esquerda se o número for menor que 10
+  horas = horas < 10 ? "0" + horas : horas;
+  minutos = minutos < 10 ? "0" + minutos : minutos;
+  segundos = segundos < 10 ? "0" + segundos : segundos;
+
+  const tempoAtual = horas + ":" + minutos + ":" + segundos;
+  document.getElementById("relogio").textContent = tempoAtual;
+}
+
+// Atualiza o relógio a cada segundo (1000 milissegundos)
+setInterval(atualizarRelogio, 1000);
+
+// Chama a função pela primeira vez para exibir o relógio imediatamente
+atualizarRelogio();
+</script>
+
+</body>
+</html>
